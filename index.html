@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="dns-prefetch" href="https://wa.me">
-<link rel="preload" as="image" href="assets/Capa do Site (1).webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/hero-direito.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
@@ -93,7 +93,9 @@
         { "@type": "Place", "name": "Ipanema" },
         { "@type": "Place", "name": "Gávea" },
         { "@type": "Place", "name": "Jardim Botânico" },
-        { "@type": "Place", "name": "Nova Iguaçu" },
+        { "@type": "Place", "name": "Barra da Tijuca" },
+        { "@type": "Place", "name": "Centro" },
+        { "@type": "City", "name": "São Paulo", "containedInPlace": { "@type": "State", "name": "São Paulo" } },
         { "@type": "Country", "name": "Brasil" }
       ],
       "founder": {
@@ -133,7 +135,7 @@
       "@id": "https://www.back-advocacia.ag5agencia.site/#webpage",
       "url": "https://www.back-advocacia.ag5agencia.site/",
       "name": "Back Advocacia | Sandra Back, advogada tributarista no Leblon RJ",
-      "description": "Escritório de Sandra Back no Leblon. Direito Tributário, Empresarial, Trabalhista e Previdenciário. Atendimento Rio de Janeiro, Nova Iguaçu, Brasil e exterior online.",
+      "description": "Escritório de Sandra Back no Leblon. Direito Tributário, Empresarial, Trabalhista e Previdenciário. Atendimento Rio de Janeiro, São Paulo, Brasil e exterior online.",
       "isPartOf": { "@id": "https://www.back-advocacia.ag5agencia.site/#website" },
       "about": { "@id": "https://www.back-advocacia.ag5agencia.site/#negocio" },
       "inLanguage": "pt-BR",
@@ -145,9 +147,10 @@
       "@id": "https://www.back-advocacia.ag5agencia.site/#faq",
       "mainEntity": [
         { "@type": "Question", "name": "Qual o valor dos honorários e em quanto tempo a ação se resolve?", "acceptedAnswer": { "@type": "Answer", "text": "Os honorários dependem da complexidade do caso e do tipo de demanda. Algumas ações administrativas se encerram em semanas; outras, judiciais, podem durar de meses a alguns anos. Na primeira consulta apresentamos um plano de custos transparente e uma estimativa realista de prazo." } },
-        { "@type": "Question", "name": "Vocês atendem clientes fora do Rio de Janeiro?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Atendemos presencialmente no escritório do Leblon e online para todo o Brasil e exterior, por videoconferência. Documentos podem ser assinados digitalmente, com a mesma validade jurídica." } },
+        { "@type": "Question", "name": "Vocês atendem clientes fora do Rio de Janeiro?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Atendemos presencialmente no escritório do Leblon, na Barra da Tijuca ou no Centro, mediante agendamento, e online para todo o Brasil e exterior, por videoconferência. Documentos podem ser assinados digitalmente, com a mesma validade jurídica." } },
         { "@type": "Question", "name": "Quem tem direito à isenção de Imposto de Renda por doença grave?", "acceptedAnswer": { "@type": "Answer", "text": "Aposentados, pensionistas e portadores de uma das doenças previstas na Lei 7.713/88 (entre elas câncer, cardiopatia grave, esclerose múltipla, Parkinson e nefropatia grave). A isenção pode ser pleiteada administrativamente e, se negada, judicialmente, com possibilidade de devolução dos valores pagos nos últimos cinco anos." } },
-        { "@type": "Question", "name": "Minha empresa é do Simples Nacional. Vale a pena fazer planejamento tributário?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Mesmo no Simples existem ajustes de enquadramento, recuperação de créditos e revisão de anexos que reduzem a carga sem mudar de regime. Em muitos casos identificamos pagamentos a maior nos últimos cinco anos, passíveis de compensação." } }
+        { "@type": "Question", "name": "Minha empresa é do Simples Nacional. Vale a pena fazer planejamento tributário?", "acceptedAnswer": { "@type": "Answer", "text": "Sim. Mesmo no Simples existem ajustes de enquadramento, recuperação de créditos e revisão de anexos que reduzem a carga sem mudar de regime. Em muitos casos identificamos pagamentos a maior nos últimos cinco anos, passíveis de compensação." } },
+        { "@type": "Question", "name": "Como funciona o primeiro atendimento?", "acceptedAnswer": { "@type": "Answer", "text": "O primeiro atendimento é uma consulta jurídica realizada mediante agendamento prévio, de forma presencial (Leblon, Barra da Tijuca ou Centro) ou por videoconferência. Durante a consulta, a Dra. Sandra analisa a situação apresentada, avalia os documentos pertinentes e oferece uma orientação jurídica inicial, esclarecendo os possíveis caminhos, os riscos envolvidos e as perspectivas do caso. Trata-se de um atendimento profissional e personalizado, remunerado na forma previamente informada ao cliente, com foco em fornecer uma análise técnica, clara e segura desde o primeiro contato." } }
       ]
     }
   ]
@@ -166,12 +169,10 @@
       <span class="brand__name">Back Advocacia</span>
     </a>
     <nav class="nav" aria-label="Menu principal">
-      <a href="#dor">Dor &amp; Solução</a>
+      <a href="#hero">Início</a>
       <a href="#areas">Áreas</a>
-      <a href="#sandra">Sandra</a>
-      <a href="#faq">FAQ</a>
-      <a href="#localizacao">Localização</a>
-      <a class="nav__cta" href="#contato">Agendar consulta</a>
+      <a href="#sandra">Sobre</a>
+      <a class="nav__cta" href="#contato">Contato</a>
     </nav>
     <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false" type="button">
       <span></span><span></span><span></span>
@@ -199,7 +200,7 @@
         </ul>
       </div>
       <div class="hero__image" data-anim="hero-image">
-        <img src="assets/Capa do Site (1).webp" alt="Dra. Sandra Back, advogada, em seu escritório no Leblon, Rio de Janeiro" width="1024" height="1024" fetchpriority="high">
+        <img src="assets/hero-direito.webp" alt="Estatueta da Justiça e martelo sobre mesa de escritório de advocacia, com estante de livros jurídicos ao fundo" width="940" height="1400" fetchpriority="high">
         <div class="hero__image-tag">
           <span>Leblon</span>
           <span>RJ</span>
@@ -236,9 +237,9 @@
           <p>Você abre o sistema, vê a guia subir todo mês e desconfia que está pagando demais. Ou recebe uma execução fiscal sem entender de onde veio. A Back trabalha com revisão de regime, defesa contenciosa e recuperação dos últimos cinco anos.</p>
         </article>
         <article class="impact__card impact__card--alt">
-          <p class="impact__tag">Para famílias</p>
+          <p class="impact__tag">Para pessoas físicas</p>
           <h3>Direitos que existem na lei. Mas só se forem cobrados.</h3>
-          <p>Diagnóstico recente. Aposentadoria que veio menor do que devia. Pedido de LOAS negado. A maior parte das pessoas desiste no primeiro "não" do INSS ou da Receita. Aqui, esse "não" é o começo do processo, não o fim.</p>
+          <p>Um diagnóstico recente. Uma aposentadoria que veio menor do que deveria. Um pedido de LOAS negado. A maior parte das pessoas desiste diante do primeiro "não" do INSS ou da Receita. Aqui, esse "não" é o começo do processo, não o fim.</p>
         </article>
       </div>
     </div>
@@ -255,7 +256,7 @@
     <article class="zigzag" id="empresa">
       <div class="zigzag__inner">
         <div class="zigzag__media">
-          <img src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?auto=format&fit=crop&w=1200&q=80" alt="Mesa de mármore preto com documentos jurídicos e caneta sobre contrato" loading="lazy" width="1200" height="900">
+          <img src="assets/direito-empresarial.webp" alt="Mesa de mármore preto com documentos jurídicos e caneta sobre contrato" loading="lazy" width="940" height="650">
           <div class="zigzag__media-frame"></div>
         </div>
         <div class="zigzag__text">
@@ -273,27 +274,27 @@
       </div>
     </article>
 
-    <!-- BLOCO 2 (zigzag invertido) -->
-    <article class="zigzag zigzag--reverse" id="familia">
-      <div class="zigzag__inner">
-        <div class="zigzag__media">
-          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1200&q=80" alt="Mãos de pessoa idosa segurando documentos previdenciários sobre mesa de madeira clara" loading="lazy" width="1200" height="900">
-          <div class="zigzag__media-frame"></div>
-        </div>
-        <div class="zigzag__text">
-          <p class="zigzag__tag">Para você e sua família</p>
-          <h3>Direitos que existem na lei. <em>Mas só se forem cobrados.</em></h3>
-          <p>Isenção de Imposto de Renda para portadores de doenças graves. BPC LOAS e benefícios previdenciários. Planejamento para a melhor aposentadoria possível. Quem chega aqui em geral já ouviu um "não" injusto. A função do escritório é transformar esse "não" em direito reconhecido.</p>
-          <ul>
-            <li>Isenção de IR por doença grave (Lei 7.713/88)</li>
-            <li>BPC LOAS e benefícios previdenciários</li>
-            <li>Planejamento e revisão de aposentadoria</li>
-            <li>Recálculo e devolução de valores pagos indevidamente</li>
-          </ul>
-          <a class="link-arrow" href="https://wa.me/5521980326008?text=Ol%C3%A1%2C%20preciso%20de%20orienta%C3%A7%C3%A3o%20sobre%20um%20direito%20meu%20ou%20da%20minha%20fam%C3%ADlia." target="_blank" rel="noopener">Quero orientação para minha situação</a>
-        </div>
+    <!-- QUADROS OBJETIVOS DE ÁREAS -->
+    <div class="container">
+      <div class="areas__cards">
+        <article class="areas__card">
+          <p class="areas__card-title">Direito Tributário</p>
+          <p class="areas__card-desc">Planejamento fiscal, revisão de regime e defesa contra cobranças indevidas.</p>
+        </article>
+        <article class="areas__card">
+          <p class="areas__card-title">Direito Empresarial</p>
+          <p class="areas__card-desc">Contratos, distratos e estruturação jurídica para empresas de todos os portes.</p>
+        </article>
+        <article class="areas__card">
+          <p class="areas__card-title">Direito Previdenciário</p>
+          <p class="areas__card-desc">Aposentadoria, BPC LOAS e revisão de benefícios junto ao INSS.</p>
+        </article>
+        <article class="areas__card">
+          <p class="areas__card-title">Isenção de IR · Doença grave</p>
+          <p class="areas__card-desc">Pedido administrativo e judicial de isenção para portadores de doenças graves.</p>
+        </article>
       </div>
-    </article>
+    </div>
   </section>
 
   <!-- =================== 6. ENCANTAMENTO — MANIFESTO =================== -->
@@ -301,19 +302,19 @@
     <div class="container">
       <p class="section__eyebrow">Princípio</p>
       <h2 id="manifesto-title" class="section__title section__title--display">
-        Um escritório <em>de-di-ca-do</em>.<br>
-        No ritmo certo de cada caso.
+        <em>De-di-ca-ção</em> que se traduz em trabalho.
       </h2>
-      <p class="manifesto__text">A Dra. Sandra usa essa palavra com sílabas separadas quando explica o trabalho. É proposital. Dedicado não é discurso. É o tempo que cada cliente recebe, o cuidado de ler o contrato linha por linha, a recusa de promessas que a lei não sustenta. Aqui não há vitrine de causas ganhas. Há causas conduzidas com técnica, paciência e a verdade quando ela precisa ser dita.</p>
+      <p class="manifesto__text">Cada caso recebe a atenção que merece. Isso significa estudar os documentos com profundidade, analisar os detalhes, construir estratégias sólidas e orientar o cliente com transparência.</p>
+      <p class="manifesto__text">A advocacia, para mim, não se resume a processos. Trata-se de compreender a situação de cada cliente, atuar com responsabilidade e buscar a melhor solução jurídica possível, sempre com técnica, comprometimento e honestidade.</p>
     </div>
   </section>
 
   <!-- =================== 7. SOBRE / CREDENCIAIS — SPLIT 50/50 STICKY =================== -->
   <section class="sandra" id="sandra" aria-labelledby="sandra-title">
     <div class="sandra__grid">
-      <div class="sandra__photo">
+      <div class="sandra__photo sandra__photo--logo">
         <div class="sandra__photo-inner">
-          <img src="assets/Capa do Site (1).webp" alt="Dra. Sandra Back, advogada e fundadora da Back Advocacia, em seu escritório no Leblon" loading="lazy" width="1024" height="1024">
+          <img src="assets/logo.webp" alt="Back Advocacia - Consultoria e Assessoria Jurídica" loading="lazy" width="400" height="400">
         </div>
       </div>
       <div class="sandra__text">
@@ -321,9 +322,9 @@
         <h2 id="sandra-title" class="section__title">Dra. Sandra Back</h2>
         <p class="sandra__role">Advogada · Pós-graduada em Direito Tributário</p>
 
-        <p>Fundou a Back Advocacia em 2019, no Leblon. Atua principalmente com Direito Tributário e Empresarial, e mantém uma frente dedicada a causas de família que envolvem saúde e previdência, áreas onde a técnica jurídica encontra impacto humano direto.</p>
+        <p>À frente da Back Advocacia desde 2019, a Dra. Sandra atua em Direito Tributário e Empresarial, assessorando pessoas físicas e jurídicas em questões tributárias, societárias e contratuais.</p>
 
-        <p>O atendimento é pessoal. Cada caso é estudado por ela e respondido por ela. Quem contrata sabe quem está conduzindo.</p>
+        <p>Seu trabalho é marcado pela análise minuciosa de cada situação, pela atenção aos detalhes e pela busca de soluções juridicamente seguras e adequadas. Com clientes no Brasil e no exterior, oferece atendimento personalizado.</p>
 
         <div class="sandra__stats">
           <div>
@@ -342,7 +343,7 @@
 
         <div class="sandra__meta">
           <div><strong>Atende</strong><span>Empresas do Simples Nacional, condomínios, pessoas com doenças graves, classes A e B</span></div>
-          <div><strong>Abrangência</strong><span>Rio de Janeiro, Nova Iguaçu, Brasil e exterior online</span></div>
+          <div><strong>Abrangência</strong><span>Rio de Janeiro, São Paulo, Brasil e exterior online</span></div>
         </div>
       </div>
     </div>
@@ -352,7 +353,7 @@
   <section class="faq" id="faq" aria-labelledby="faq-title">
     <div class="container">
       <p class="section__eyebrow">Perguntas frequentes</p>
-      <h2 id="faq-title" class="section__title">Antes da consulta, <em>algumas respostas.</em></h2>
+      <h2 id="faq-title" class="section__title">Antes do atendimento, <em>algumas respostas.</em></h2>
 
       <details class="faq__item">
         <summary>Qual o valor dos honorários e em quanto tempo a ação se resolve?</summary>
@@ -361,7 +362,7 @@
 
       <details class="faq__item">
         <summary>Vocês atendem clientes fora do Rio de Janeiro?</summary>
-        <p>Sim. Atendemos presencialmente no escritório do Leblon e online para todo o Brasil e exterior, por videoconferência. Documentos podem ser assinados digitalmente, com a mesma validade jurídica de uma assinatura presencial.</p>
+        <p>Sim. Atendemos presencialmente no escritório do Leblon, na Barra da Tijuca ou no Centro, mediante agendamento, e online para todo o Brasil e exterior, por videoconferência. Documentos podem ser assinados digitalmente, com a mesma validade jurídica de uma assinatura presencial.</p>
       </details>
 
       <details class="faq__item">
@@ -375,8 +376,8 @@
       </details>
 
       <details class="faq__item">
-        <summary>Como funciona a primeira consulta?</summary>
-        <p>É uma conversa de diagnóstico, presencial no Leblon ou por videoconferência. Sandra ouve o caso, pede os documentos relevantes e responde se há causa, qual o caminho jurídico e o prazo estimado. Sem cobrança disfarçada e sem promessa que a lei não autorize.</p>
+        <summary>Como funciona o primeiro atendimento?</summary>
+        <p>O primeiro atendimento é uma consulta jurídica realizada mediante agendamento prévio, de forma presencial (Leblon, Barra da Tijuca ou Centro) ou por videoconferência. Durante a consulta, a Dra. Sandra analisa a situação apresentada, avalia os documentos pertinentes e oferece uma orientação jurídica inicial, esclarecendo os possíveis caminhos, os riscos envolvidos e as perspectivas do caso. Trata-se de um atendimento profissional e personalizado, remunerado na forma previamente informada ao cliente, com foco em fornecer uma análise técnica, clara e segura desde o primeiro contato.</p>
       </details>
     </div>
   </section>
@@ -441,7 +442,7 @@
         <p>A primeira conversa é o momento de entender se há causa, se há prazo, se há caminho. Sem cobrança e sem promessa que a lei não autorize.</p>
         <ul class="cta-form__bullets">
           <li>Resposta no mesmo dia útil, em horário comercial</li>
-          <li>Consulta presencial no Leblon ou por videoconferência</li>
+          <li>Consulta presencial no Leblon, na Barra da Tijuca ou no Centro, ou por videoconferência</li>
           <li>Documentos com assinatura digital válida juridicamente</li>
         </ul>
         <p class="cta-form__contact">
@@ -511,8 +512,8 @@
         <ul>
           <li><a href="#empresa">Direito Tributário</a></li>
           <li><a href="#empresa">Direito Empresarial</a></li>
-          <li><a href="#familia">Direito Previdenciário</a></li>
-          <li><a href="#familia">Isenção de IR · Doença grave</a></li>
+          <li><a href="#dor">Direito Previdenciário</a></li>
+          <li><a href="#dor">Isenção de IR · Doença grave</a></li>
         </ul>
       </div>
 
@@ -560,12 +561,41 @@
   </div>
 </footer>
 
-<!-- WhatsApp FAB + Balão premium -->
-<button class="wa-fab" id="wa-fab" aria-label="Conversar com Sandra Back pelo WhatsApp" type="button">
-  <svg viewBox="0 0 24 24" aria-hidden="true" width="28" height="28">
-    <path fill="currentColor" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.74.46 3.43 1.32 4.93L2 22l5.34-1.4a9.9 9.9 0 0 0 4.7 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.91-7zM12.05 20.13h-.01a8.22 8.22 0 0 1-4.19-1.15l-.3-.18-3.17.83.85-3.09-.2-.32a8.22 8.22 0 0 1-1.26-4.39c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.2 8.24zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.13-.56.13-.16.25-.64.81-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.38-1.72-.14-.25-.02-.39.11-.51.11-.11.25-.29.37-.43.13-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.49-.41-.42-.56-.43h-.48c-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.04 0 1.21.88 2.37 1 2.53.13.16 1.74 2.66 4.22 3.73.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.23-.18-.48-.31z"/>
-  </svg>
-</button>
+<!-- WhatsApp Premium Experience -->
+<div class="wa-premium-container">
+  <!-- Balão de Mensagem Glassmorphism -->
+  <div id="wa-message-bubble" class="wa-bubble">
+    <button class="wa-close" id="wa-close-btn" aria-label="Fechar balão de mensagem">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" width="14" height="14" aria-hidden="true"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="wa-content">
+      <div class="wa-header">
+        <div class="wa-avatar-wrapper">
+          <img src="assets/avatar-logo.webp" alt="Back Advocacia" class="wa-avatar" width="48" height="48">
+        </div>
+        <div class="wa-info">
+          <span class="wa-name">Back Advocacia</span>
+        </div>
+      </div>
+      <div id="wa-typing" class="wa-typing">
+        <span></span><span></span><span></span>
+      </div>
+      <div id="wa-real-message" class="wa-message-text" style="display:none;">
+        <p>Olá! Estamos à disposição para esclarecer suas dúvidas. <strong>Atendimento humanizado.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Botão Flutuante Redondo -->
+  <a href="https://wa.me/5521980326008?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20site%20e%20gostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica."
+     class="wa-float-btn" target="_blank" rel="noopener noreferrer"
+     id="wa-main-btn" aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="30" height="30">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="wa-badge" id="wa-notification" aria-hidden="true">1</span>
+  </a>
+</div>
 
 <!-- Cookie banner LGPD -->
 <div class="cookie" id="cookie" role="dialog" aria-label="Aviso de cookies" aria-hidden="true">
